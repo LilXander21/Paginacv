@@ -1,0 +1,299 @@
+/* Estilos principales de la página y tarjetas; limpiado y actualizado */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #152640 100%, #152640 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Título y párrafo principales */
+h1 {
+    text-align: center;
+    color: #f5f5f5;
+    margin-top: 40px;
+    font-size: 2.25rem;
+    letter-spacing: 1px;
+}
+
+p {
+    text-align: center;
+    color: #1353e9;
+    font-size: 1.05rem;
+    margin: 50px 16px 24px;
+}
+
+
+
+.panel:hover {
+    background: rgba(21,38,64,0.72);
+}
+/* Separación consistente dentro del panel */
+.panel > * + * {
+    margin-top: 18px;
+}
+
+/* Tarjetas */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin: 24px 0 60px;
+}
+
+.tarjeta {
+    background: #152640;
+    color: #8892b0;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(10,25,47,0.35);
+    overflow: hidden;
+    width: 320px;
+    flex: 1 1 320px;
+    max-width: 350px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.28s ease, transform 0.28s ease;
+}
+
+.tarjeta:hover {
+    box-shadow: 0 12px 32px #000000 ;
+    transform: translateY(10px);
+}
+
+
+/* Contenido interno de la tarjeta */
+.info {
+    padding: 18px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info .origen {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #24b31f;
+}
+
+.info .origen.destaque {
+    color: #24b31f;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #FAFAFA;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.descp {
+    color: #FAFAFA;
+    background-attachment: fixed;
+    line-height: 1.45;
+    font-size: 0.96rem;
+}
+
+/* Subtítulo con barra y separador */
+.subtitulo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #FAFAFA;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 24px 0 12px 0;
+    padding-right: 12px;
+}
+
+.subtitulo .slash {
+    color: #006aff;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.subtitulo::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #006aff;
+    width: 100%;
+    margin-top: 4px;
+}
+
+
+.subtitulo2 {
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 1.05rem;
+    margin: 50px 16px 24px;
+    font-size: 1.3rem
+}
+
+
+.subtitulo2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #006aff;
+    width: 100%;
+    margin-top: 4px;
+}
+
+/* Estilo para el círculo de la foto de perfil */
+.foto-perfil {
+    width: 250px; /* Agranda el ancho */
+    height: 250px; /* Agranda el alto */
+    border-radius: 50%;
+    background: #152640;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* Ajusta la sombra */
+    border: 4px solid #2f81f7; /* Contorno distintivo */
+}
+
+.foto-perfil:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Sombra más intensa al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .tarjeta img { height: 160px; }
+    .panel { padding: 22px; }
+    h1 { font-size: 2rem; }
+}
+
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 18px;
+    width: 100%;
+    max-width: 400px;
+    margin: 50px;
+    color: #FAFAFA;
+    text-align:justify;
+    font-size: 18px;
+}
+.contenedor li:before {
+    content: "⋄";
+    color: #00FFFF;
+    font-weight: bold;
+    margin-right: 8px;
+}
+li::before {
+  content: none;
+}
+li::marker {
+  content: none;
+}
+.descp1 {
+    color: #FAFAFA;
+    font-weight: bold;
+    margin-right: 8px
+}
+.descp2 {
+    color: #FAFAFA;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            margin: 24px 0 60px;
+        }
+        .tarjeta {
+            background: #152640;
+            color: #8892b0;
+            border-radius: 8px;
+            box-shadow: 0 6px 14px rgba(10,25,47,0.35);
+            overflow: hidden;
+            width: 320px;
+            flex: 1 1 320px;
+            max-width: 350px;
+            min-width: 260px;
+            display: flex;
+            flex-direction: column;
+        }
+        .tarjeta img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+      
+       
+
+        .subtitulo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #e0e6ed;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 40px 0 12px 24px;
+            padding-right: 24px;
+        }
+        .subtitulo .slash {
+            color: #2f81f7;
+            font-size: 2rem;
+            line-height: 1;
+        }
+        .subtitulo::after {
+            content: "";
+            display: block;
+            height: 2px;
+            background: rgba(231, 6, 6, 0.06);
+            flex: 1;
+            margin-left: 18px;
+            border-radius: 2px;
+        }
+
+        /* Caja que encierra todo el texto */
+        .panel {
+            max-width: 1100px;
+            margin: 48px auto; /* Aumenta el margen superior e inferior */
+            background: rgba(21,38,64,0.72); /* caja semiopaca */
+            border-radius: 16px; /* Aumenta el borde redondeado */
+            padding: 40px; /* Aumenta el espacio interno */
+            box-shadow: 0 12px 36px rgba(10,25,47,0.45); /* Ajusta la sombra */
+            color: inherit;
+        }
+
+        /* Ajuste interno para separar subtítulos/columnas */
+        .panel > * + * { margin-top: 18px; }
+
+        /* Mantener estilos previos para tarjetas dentro de la panel */
+        .tarjetas { margin-top: 24px; }
+
+        /* Responsive: reducir padding en pantallas pequeñas */
+        @media (max-width: 600px) {
+            .panel { padding: 24px; margin: 24px auto; }
+            .tarjeta img { height: 140px; }
+        }
+        @media (max-width: 600px) {
+            .tarjetas { flex-direction: column; gap: 12px; margin: 20px 0; }
+            .tarjeta { width: 98%; margin: 0 auto 12px; }
+            .tarjeta img { height: 90px; }
+            .info h2 { font-size: 1.1em; }
+        }
