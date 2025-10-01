@@ -6,28 +6,29 @@ poner segundo apellido.☑
 
 aclarar letra.☑ 
 
-cambiar información UNESCO ☐
+cambiar información UNESCO ☑
 
 AGREGAR DEMÁS INFORMACIÓN.☐
 
 ALARGAR CON EL CV .☐
 
-PROBAR OTROS ESTILOS.☐
+PROBAR OTROS ESTILOS.☑
 
-AREGLAR MARGEN DE LA PAGINA☐
+AREGLAR MARGEN DE LA PAGINA ☐
 
-AGREGAR FOTO DEL CV ☐
+AGREGAR FOTO DEL CV ☐ ☑
 
 DONDE HOSTEAR LA PAGINA ☐
 
-revisar el cv ☐
+revisar el cv ☐ 
 
-ingresar los años para el cv ☐
+ingresar los años para el cv ☐ 
 
 ---------------------------------------------0-----------------------------------------------
-Clonar codigo ☐
 
-probar colores más pasteles y evitar ruido visual ☐
+Clonar codigo ☑
+
+probar colores más pasteles y evitar ruido visual ☑
 
 agregar otro tipo de tarjetas ☐
 
@@ -35,7 +36,7 @@ agregar otros efectos y visual ☐
 
 probar otras fotos ☐
 
-
+Realizar otro código ☐
 
 
 
